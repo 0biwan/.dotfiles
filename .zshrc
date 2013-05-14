@@ -26,6 +26,11 @@ function pman() { ps=`mktemp -t manpageXXXX`.ps ; man -t $@ > "$ps" ; open "$ps"
 alias mstart= 'mysql.server start'
 alias mstop='mysql.server stop'
 
+#Apache easy start/stop
+alias apacheon='sudo apachectl start'
+alias apacheoff='sudo apachectl stop'
+alias apachere='sudo apachectl restart'
+
 webon(){
   mysql.server start; sudo nginx; sudo php-fpm
 }
