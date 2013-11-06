@@ -21,7 +21,3 @@ PS1="\[\e[31;1m\]\u\[\e[0m\]::\[\e[36;1m\]\W\[\033[0;32m\]\$(parse_git_branch_an
 
 TERM=xterm-256color
 
-# ruby version manager
-
-export PATH="./bin:$PATH"
-[[ -s "/Users/marcomartins/.rvm/scripts/rvm" ]] && source "/Users/marcomartins/.rvm/scripts/rvm"
