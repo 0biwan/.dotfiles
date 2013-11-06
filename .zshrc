@@ -2,17 +2,18 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # specify a theme
-export ZSH_THEME="norm"
+export ZSH_THEME="agnoster"
+DEFAULT_USER="joaoveiga"
 
 # load from the available list of plugins at ~/.oh-my-zsh/plugins
-plugins=(git git-flow symfony2 sublime cap brew github mysql osx vagrant)
+plugins=(git git-flow symfony2 sublime cap brew github mysql osx vagrant)brew github mysql osx vagrant symfony2 sublime
 
 source $ZSH/oh-my-zsh.sh
 # source ~/.git-flow-completion.zsh #you have to paste that file to that location then
 
 # Customize to your needs...
 export PATH="$(brew --prefix)/bin:$PATH"
-export PATH=/usr/local/sbin:/Users/marcomartins/.rvm/gems/ruby-1.9.3-p194/bin:/Users/marcomartins/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/marcomartins/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/marcomartins/.rvm/bin:./bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin
+export PATH=/usr/local/sbin:"$(brew --prefix josegonzalez/php/php54)/bin:$PATH":./bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin
 
 
 #see/hide hidden files
@@ -32,10 +33,10 @@ alias apacheoff='sudo apachectl stop'
 alias apachere='sudo apachectl restart'
 
 webon(){
-  mysql.server start; sudo nginx; sudo php-fpm
+  mysql.server start; sudo apachectl start
 }
 weboff() {
-  mysql.server stop; sudo nginx -s stop; sudo killall php-fpm
+  mysql.server stop; sudo apachectl stop
 }
 
 #z
