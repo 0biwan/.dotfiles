@@ -2,12 +2,8 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # specify a theme
-<<<<<<< HEAD
 export ZSH_THEME="agnoster"
 DEFAULT_USER="joaoveiga"
-=======
-export ZSH_THEME="default"
->>>>>>> 9517380c2048594165b3d18654c4d770eff7abbc
 
 # load from the available list of plugins at ~/.oh-my-zsh/plugins
 plugins=(git git-flow symfony2 sublime cap brew github mysql osx vagrant)brew github mysql osx vagrant symfony2 sublime
@@ -17,11 +13,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH="$(brew --prefix)/bin:$PATH"
-<<<<<<< HEAD
-export PATH=/usr/local/sbin:"$(brew --prefix josegonzalez/php/php54)/bin:$PATH":./bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin
-=======
-export PATH=/usr/local/sbin:/Users/joaoveiga/.rvm/gems/ruby-1.9.3-p194/bin:/Users/joaoveiga/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/joaoveiga/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/joaoveiga/.rvm/bin:./bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin
->>>>>>> 9517380c2048594165b3d18654c4d770eff7abbc
+export PATH=/usr/local/sbin:"$(brew --prefix josegonzalez/php/php54)/bin:$PATH":./bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/usr/local/sbin:/Users/joaoveiga/.rvm/gems/ruby-1.9.3-p194/bin:/Users/joaoveiga/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/joaoveiga/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/joaoveiga/.rvm/bin:./bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin
 
 
 #see/hide hidden files
