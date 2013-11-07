@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # specify a theme
-export ZSH_THEME="norm"
+export ZSH_THEME="default"
 
 # load from the available list of plugins at ~/.oh-my-zsh/plugins
 plugins=(git git-flow symfony2 sublime cap brew github mysql osx vagrant)
