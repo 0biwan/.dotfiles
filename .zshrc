@@ -12,7 +12,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH="$(brew --prefix)/bin:$PATH"
-export PATH=/usr/local/sbin:/Users/marcomartins/.rvm/gems/ruby-1.9.3-p194/bin:/Users/marcomartins/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/marcomartins/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/marcomartins/.rvm/bin:./bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin
+export PATH=/usr/local/sbin:/Users/joaoveiga/.rvm/gems/ruby-1.9.3-p194/bin:/Users/joaoveiga/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/joaoveiga/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/joaoveiga/.rvm/bin:./bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin
 
 
 #see/hide hidden files
@@ -32,10 +32,10 @@ alias apacheoff='sudo apachectl stop'
 alias apachere='sudo apachectl restart'
 
 webon(){
-  mysql.server start; sudo nginx; sudo php-fpm
+  mysql.server start; sudo apachectl start
 }
 weboff() {
-  mysql.server stop; sudo nginx -s stop; sudo killall php-fpm
+  mysql.server stop; sudo apachectl stop
 }
 
 #z
