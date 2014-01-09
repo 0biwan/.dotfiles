@@ -521,7 +521,7 @@ defaults write org.m0k.transmission WarningLegal -bool false
 #defaults write com.twitter.twitter-mac HideInBackground -bool true
 
 ##############################################################################
-# MMartins Personal configs                        #
+# JoaoVeiga Personal configs                                                 #
 ##############################################################################
 # Set hibernatemode to 0, only RAM
 sudo pmset -a hibernatemode 0

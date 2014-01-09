@@ -6,7 +6,7 @@ export ZSH_THEME="agnoster"
 DEFAULT_USER="joaoveiga"
 
 # load from the available list of plugins at ~/.oh-my-zsh/plugins
-plugins=(git git-flow symfony2 sublime cap brew github mysql osx vagrant)brew github mysql osx vagrant symfony2 sublime
+plugins=(git git-flow symfony2 sublime cap brew github mysql osx vagrant)
 
 source $ZSH/oh-my-zsh.sh
 # source ~/.git-flow-completion.zsh #you have to paste that file to that location then
