@@ -109,6 +109,8 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryCli
 #defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerHorizSwipeGesture -int 1
 #defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -int 1
 
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
+
 # Disable “natural” (Lion-style) scrolling
 #defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
